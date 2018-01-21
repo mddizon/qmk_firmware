@@ -28,14 +28,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     A 2 key macro board to tinker with
 
 /* key matrix size */
-#define MATRIX_ROWS 2
+#define MATRIX_ROWS 1
 #define MATRIX_COLS 2
 
 /* 9Key PCB default pin-out */
-#define MATRIX_ROW_PINS { D1, D0 }
-#define MATRIX_COL_PINS { D1, D0 }
-#define UNUSED_PINS
+// #define MATRIX_ROW_PINS { D1, D0 }
+// #define MATRIX_COL_PINS { D1, D0 }
+// #define UNUSED_PINS
 
-#define TAPPING_TERM 200
+// #define TAPPING_TERM 200
 
 #endif
