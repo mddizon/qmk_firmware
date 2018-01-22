@@ -1,5 +1,5 @@
 /*
-Copyright 2017 Carlos Filoteo <c.filoteo@live.com>
+Copyright 2018 Carlos Filoteo <c.filoteo@live.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -30,12 +30,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* key matrix size */
 #define MATRIX_ROWS 1
 #define MATRIX_COLS 2
-
-/* 9Key PCB default pin-out */
-// #define MATRIX_ROW_PINS { D1, D0 }
-// #define MATRIX_COL_PINS { D1, D0 }
-// #define UNUSED_PINS
-
-// #define TAPPING_TERM 200
 
 #endif

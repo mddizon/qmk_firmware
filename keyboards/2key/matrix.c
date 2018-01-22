@@ -97,7 +97,6 @@ uint8_t matrix_scan(void)
     }
 
     matrix_debouncing[0] = matrix_stage[0];
-    // matrix_debouncing[1] = matrix_stage[1];
 
     if (debouncing && (timer_elapsed(debouncing_time) > 20)) {
         for (uint8_t i = 0; i < MATRIX_ROWS; i++) {
