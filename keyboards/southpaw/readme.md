@@ -1,12 +1,12 @@
 # southpaw
 
-![southpaw](imgur.com image replace me!)
+![southpaw](https://i.imgur.com/RAUo0Nx.jpg)
 
-A short description of the keyboard/project
+More compact than a tenkeyless with more functionality than a full sized board. Designed for maximum workspace fluidity.  
 
-Keyboard Maintainer: [You](https://github.com/yourusername)  
-Hardware Supported: The PCBs, controllers supported  
-Hardware Availability: links to where you can find this hardware
+Keyboard Maintainer: (none)
+Hardware Supported: Southpaw PCB
+Hardware Availability: [Group Buy](https://geekhack.org/index.php?topic=92344.0@)
 
 Make example for this keyboard (after setting up your build environment):
 
