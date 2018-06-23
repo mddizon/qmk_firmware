@@ -18,6 +18,7 @@ enum custom_keycodes {
   LOWER,
   RAISE,
   ADJUST,
+  PURPLE,
 };
 
 // Fillers to make layering more clear
@@ -91,8 +92,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT( \
   KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC,      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, \
-  KC_ESC,  _______, _______, _______, _______,      _______, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, \
-  KC_CAPS, KC_TILD, _______, _______, _______,      _______, _______, _______, KC_PIPE,  KC_DQT, \
+  KC_ESC,  _______, _______, _______, PURPLE ,      _______, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, \
+  KC_CAPS, KC_TILD, _______, _______, RGB_TOG,      _______, _______, _______, KC_PIPE,  KC_DQT, \
                     _______, _______, _______,      KC_ENT,  _______, KC_DEL                    \
 ),
 
@@ -160,6 +161,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         layer_on(_ADJUST);
       } else {
         layer_off(_ADJUST);
+      }
+      return false;
+      break;
+    case PURPLE:
+      if (record->event.pressed) {
+        rgblight_sethsv(270, 100, 100);
       }
       return false;
       break;

@@ -67,6 +67,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_ACTION_MACRO
 //#define NO_ACTION_FUNCTION
 
+#ifdef RGBLIGHT_ENABLE
+  #define RGB_DI_PIN B3     // The pin the LED strip is connected to
+  #define RGBLED_NUM 5     // Number of LEDs in your strip
+#endif
+
 #ifdef SUBPROJECT_rev1
     #include "rev1/config.h"
 #endif
