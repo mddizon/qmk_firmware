@@ -70,6 +70,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef RGBLIGHT_ENABLE
   #define RGB_DI_PIN B3     // The pin the LED strip is connected to
   #define RGBLED_NUM 10     // Number of LEDs in your strip
+  #define RGBLIGHT_ANIMATIONS
 #endif
 
 #ifdef SUBPROJECT_rev1
