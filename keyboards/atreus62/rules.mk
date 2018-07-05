@@ -50,4 +50,3 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 EXTRAKEY_ENABLE = yes       # Audio control and System control(+450)
 COMMAND_ENABLE = yes        # Commands for debug and configuration
 UNICODE_ENABLE = no        # Unicode
-RGBLIGHT_ENABLE = yes
