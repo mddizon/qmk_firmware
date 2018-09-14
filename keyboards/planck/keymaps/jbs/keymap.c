@@ -4,6 +4,9 @@
 
 extern keymap_config_t keymap_config;
 
+// Edited the number row as well as symbols on shifted number keys and changed the layout
+// to a ten key setup. 14AUG2018 JBS
+
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
@@ -47,38 +50,38 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Lower
  * ,-----------------------------------------------------------------------------------.
- * |   `  |   !  |   @  |   #  |   $  |   %  |   ^  |   &  |   *  |   (  |   )  |Reset |
+ * |   `  |      |      |      |      |   1  |   2  |   3  |   _  |   [  |   ]  |Reset |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  |  /   |
+ * |      |      |      |      |      |   4  |   5  |   6  |   =  |      |      |  \   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      | ins  | cut  | copy | pste |      |      |      | Prev | Next | P/P  |      |
+ * |      |      |      |      |      |   7  |   8  |   9  | Prev | Next | P/P  |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |ScrLK |      |      |      |Lower |      |      |      | Mute | Vol- | Vol+ |      |
+ * |ScrLK |      |      |      |Lower |   0  |   0  |      | Mute | Vol- | Vol+ |      |
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_ortho_4x12( \
-  KC_GRV,KC_EXLM,KC_AT,KC_HASH,KC_DLR,KC_PERC,KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,RESET, \
-  KC_NO,KC_1,KC_2,KC_3,KC_4,KC_5,KC_6,KC_7,KC_8,KC_9,KC_0,KC_PSLS, \
-  KC_NO,KC_INS,KC_CUT,KC_COPY,KC_PSTE,KC_NO,KC_NO,KC_NO,KC_MPRV,KC_MNXT,KC_MPLY, \
-  KC_NO,KC_SLCK,KC_NO,KC_NO,KC_NO,KC_TRNS,KC_NO,KC_NO,KC_NO,KC_MUTE,KC_VOLD,KC_VOLU,KC_NO \
+  KC_GRV,KC_NO,KC_NO,KC_NO,KC_NO,KC_1,KC_2,KC_3,KC_UNDERSCORE,KC_LBRACKET,KC_RBRACKET,RESET, \
+  KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_4,KC_5,KC_6,KC_EQUAL,KC_NO,KC_NO,KC_BSLASH, \
+  KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_7,KC_8,KC_9,KC_MPRV,KC_MNXT,KC_MPLY, \
+  KC_SLCK,KC_NO,KC_NO,KC_NO,KC_TRNS,KC_0,KC_0,KC_NO,KC_MUTE,KC_VOLD,KC_VOLU,KC_NO \
 ),
 
 /* Raise
  * ,-----------------------------------------------------------------------------------.
- * |  ~   |  F1  |  F2  |  F3  |  F4  |      |      |   +  |   =  |   -  |   _  | Del  |
+ * |  ~   |  F1  |  F2  |  F3  |  F4  |   !  |   @  |   #  |   -  |   {  |   }  | Del  |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |  F5  |  F6  |  F7  |  F8  |      |      |   [  |   ]  |   {  |   }  |  |   |
+ * |      |  F5  |  F6  |  F7  |  F8  |   $  |   %  |   ^  |   +  |      |      |  |   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |      |  F9  |  F10 |  F11 |  F12 |      |      |      | Brt- | Brt+ |      |      |
+ * |      |  F9  |  F10 |  F11 |  F12 |   &  |   *  |   (  | Brt- | Brt+ |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Caps |      |      |      |      |      |      |Raise | Home | PgDN | PgUP | End  |
+ * | Caps |      |      |      |      |   )  |   )  |Raise | Home | PgDN | PgUP | End  |
  * `-----------------------------------------------------------------------------------'
  */
  [_RAISE] = LAYOUT_ortho_4x12( \
-  KC_TILD,KC_F1,KC_F2,KC_F3,KC_F4,KC_NO,KC_NO,KC_PLUS,KC_PEQL,KC_PMNS,KC_UNDS,KC_DEL, \
-  KC_NO,KC_F5,KC_F6,KC_F7,KC_F8,KC_NO,KC_NO,KC_LBRC,KC_RBRC,KC_LCBR,KC_RCBR,KC_PIPE, \
-  KC_NO,KC_F9,KC_F10,KC_F11,KC_F12,KC_NO,KC_NO,KC_NO,BL_DEC,BL_INC,KC_NO,KC_NO,KC_CAPS, \
-  KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_NO,KC_TRNS,KC_HOME,KC_PGDN,KC_PGUP,KC_END \
+  KC_TILD,KC_F1,KC_F2,KC_F3,KC_F4,KC_EXCLAIM,KC_AT,KC_HASH,KC_MINUS,KC_LEFT_CURLY_BRACE,KC_RIGHT_CURLY_BRACE,KC_DEL, \
+  KC_NO,KC_F5,KC_F6,KC_F7,KC_F8,KC_DOLLAR,KC_PERCENT,KC_CIRCUMFLEX,KC_PLUS,KC_NO,KC_NO,KC_PIPE, \
+  KC_NO,KC_F9,KC_F10,KC_F11,KC_F12,KC_AMPERSAND,KC_ASTERISK,KC_LEFT_PAREN,BL_DEC,BL_INC,KC_NO,KC_NO, \
+  KC_CAPSLOCK,KC_NO,KC_NO,KC_NO,KC_NO,KC_RIGHT_PAREN,KC_RIGHT_PAREN,KC_TRNS,KC_HOME,KC_PGDN,KC_PGUP,KC_END \
 ),
 
 /* Adjust (Lower + Raise)
