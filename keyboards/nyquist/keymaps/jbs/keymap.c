@@ -122,6 +122,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
       return false;
       break;
+    case FN:
+      if (record->event.pressed) {
+        layer_on(_FN);
+      } else {
+        layer_off(_FN);
+      }
+      return false;
+      break;
     case LOWER:
       if (record->event.pressed) {
         layer_on(_LOWER);
