@@ -1,0 +1,5 @@
+
+#ifdef AUDIO_ENABLE
+  #undef STARTUP_SONG
+  #define STARTUP_SONG SONG(ONE_UP_SOUND)
+#endif

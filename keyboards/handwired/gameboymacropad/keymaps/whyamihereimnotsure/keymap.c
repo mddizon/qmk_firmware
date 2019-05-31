@@ -15,11 +15,13 @@
  */
 #include QMK_KEYBOARD_H
 
+#define SCI LCTL(LSFT(KC_I))
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT(
     KC_MSEL, KC_MPRV, KC_MPLY, KC_MNXT,
-    KC_CALC, KC_VOLU, KC_MUTE, KC_VOLD,
+    KC_CALC, KC_VOLD, KC_MUTE, KC_VOLU,
     KC_UNDO, KC_CUT,  KC_COPY, KC_PSTE,
-    RGB_TOG, RGB_MOD, KC_NO,   KC_SLEP
+    RGB_TOG, RGB_MOD,   SCI,   KC_SLEP
   )
 };
