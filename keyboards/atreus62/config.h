@@ -30,47 +30,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DESCRIPTION     q.m.k. keyboard firmware for Atreus62
 
 /* key matrix size */
-// Rows are doubled-up
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 13
 
-// wiring of each half
 #define MATRIX_ROW_PINS { D2, D3, D1, D0, D4 }
 #define MATRIX_COL_PINS { F4, F5, F6, F7, B1, B3, B2, B6, B5, B4, E6, D7, C6 }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION ROW2COL
-
-/* define if matrix has ghost */
-//#define MATRIX_HAS_GHOST
-
-/* number of backlight levels */
-// #define BACKLIGHT_LEVELS 3
-
-/* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+#define RGB_DI_PIN F0
+#define RGBLED_NUM 14
 
-/*
- * Feature disable options
- *  These options are also useful to firmware size reduction.
- */
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_KNIGHT
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 
-/* disable debug print */
-// #define NO_DEBUG
-
-/* disable print */
-// #define NO_PRINT
-
-/* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
-//#define NO_ACTION_MACRO
-//#define NO_ACTION_FUNCTION
+#define B7_AUDIO
+#define STARTUP_SONG SONG(MARIO_THEME)
 
 #endif
