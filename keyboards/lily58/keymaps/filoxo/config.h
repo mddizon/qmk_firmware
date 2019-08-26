@@ -38,6 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #undef RGBLED_NUM
 #define RGBLED_NUM 10
 #define RGBLED_SPLIT {5,5}
+#define RGBLIGHT_LED_MAP { 0, 1, 2, 3, 4, 9, 8, 7, 6, 5 }
 #define RGBLIGHT_EFFECT_RAINBOW_SWIRL
 #define RGBLIGHT_EFFECT_RAINBOW_MOOD
 #define RGBLIGHT_EFFECT_BREATHING
