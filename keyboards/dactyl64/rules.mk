@@ -37,6 +37,6 @@ QUANTUM_LIB_SRC += 	i2c.c \
 SRC += ssd1306.c
 
 # if firmware size over limit, try this option
-# CFLAGS += -flto
+CFLAGS += -flto
 
 DEFAULT_FOLDER = dactyl64/rev1
