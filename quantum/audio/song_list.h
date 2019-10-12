@@ -143,27 +143,14 @@
 #define CLOSE_ENCOUNTERS_5_NOTE
 #define DOE_A_DEER
 #define IN_LIKE_FLINT
-#define IMPERIAL_MARCH
 #define BASKET_CASE
-#define COIN_SOUND
-#define ONE_UP_SOUND
 #define SONIC_RING
-#define ZELDA_PUZZLE
-#define ZELDA_TREASURE
-#define OVERWATCH_THEME
-#define MARIO_THEME
-#define MARIO_GAMEOVER
-#define MARIO_MUSHROOM
-#define E1M1_DOOM
-#define DISNEY_SONG
 #define NUMBER_ONE
 #define CABBAGE_SONG
-#define OLD_SPICE
 #define VICTORY_FANFARE_SHORT
 #define ALL_STAR
 #define RICK_ROLL
 #define FF_PRELUDE
-#define TO_BOLDLY_GO
 #define KATAWARE_DOKI
 #define MEGALOVANIA
 #define MICHISHIRUBE
@@ -180,4 +167,222 @@
 #define TERRAS_THEME
 #define RENAI_CIRCULATION
 #define PLATINUM_DISCO
-#define LP_NUMB
+
+#define GOT_THEME \
+  WD_NOTE(_G5), WD_NOTE(_C5), Q__NOTE(_EF5), Q__NOTE(_F5), W__NOTE(_G5), W__NOTE(_C5), Q__NOTE(_EF5), Q__NOTE(_F5), H__NOTE(_D5), \
+  H__NOTE(_G4), Q__NOTE(_BF4), Q__NOTE(_C5), H__NOTE(_D5), H__NOTE(_G4), Q__NOTE(_BF4), Q__NOTE(_C5), H__NOTE(_D5), \
+  H__NOTE(_G4), Q__NOTE(_BF4), Q__NOTE(_C5), H__NOTE(_D5), H__NOTE(_BF4), H__NOTE(_D5), WD_NOTE(_F5), WD_NOTE(_BF4), \
+  W__NOTE(_D5), H__NOTE(_EF5), W__NOTE(_D5), H__NOTE(_BF4), H__NOTE(_C5), H__NOTE(_G4), Q__NOTE(_AF4), Q__NOTE(_BF4), \
+  H__NOTE(_C5), H__NOTE(_G4), Q__NOTE(_AF4), Q__NOTE(_BF4), H__NOTE(_C5), H__NOTE(_G4), Q__NOTE(_AF4), Q__NOTE(_BF4), \
+  WD_NOTE(_C5), H__NOTE(_C6), H__NOTE(_EF5), Q__NOTE(_AF5), Q__NOTE(_BF5), H__NOTE(_C6), H__NOTE(_EF5), Q__NOTE(_AF5), \
+  Q__NOTE(_C6), H__NOTE(_BF5), H__NOTE(_EF5), Q__NOTE(_G5), Q__NOTE(_AF5), H__NOTE(_BF5), H__NOTE(_EF5), H__NOTE(_G5), \
+  H__NOTE(_AF5), H__NOTE(_C5), Q__NOTE(_F5), Q__NOTE(_G5), H__NOTE(_AF5), H__NOTE(_C5), Q__NOTE(_G5), Q__NOTE(_AF5), \
+  H__NOTE(_G5), H__NOTE(_C5), Q__NOTE(_EF5), Q__NOTE(_F5), H__NOTE(_G5), H__NOTE(_C5), H__NOTE(_D5), H__NOTE(_EF5), \
+  H__NOTE(_AF4), Q__NOTE(_C5), Q__NOTE(_D5), H__NOTE(_EF5), H__NOTE(_AF4), Q__NOTE(_C5), Q__NOTE(_D5), H__NOTE(_EF5), \
+  H__NOTE(_AF4), H__NOTE(_EF5), H__NOTE(_D5), H__NOTE(_G4), H__NOTE(_D5), H__NOTE(_C5), H__NOTE(_G4), Q__NOTE(_AF4), \
+  Q__NOTE(_BF4), H__NOTE(_C5), H__NOTE(_G4), Q__NOTE(_AF4), Q__NOTE(_BF4), H__NOTE(_C5), H__NOTE(_G5), Q__NOTE(_AF5), \
+  Q__NOTE(_BF5), H__NOTE(_C6), H__NOTE(_G5), Q__NOTE(_AF5), Q__NOTE(_BF5), H__NOTE(_C6), H__NOTE(_G5), Q__NOTE(_AF5), \
+  Q__NOTE(_BF5), WD_NOTE(_C6),
+
+#define THE_RAINS_OF_CASTAMERE \
+  H__NOTE(_A4), WD_NOTE(_F5), H__NOTE(_A4), WD_NOTE(_E5), H__NOTE(_A4), W__NOTE(_F5), W__NOTE(_G5), WD_NOTE(_E5), H__NOTE(_A4), \
+  W__NOTE(_G5), W__NOTE(_F5), W__NOTE(_E5), W__NOTE(_D5), BD_NOTE(_E5), H__NOTE(_A5), W__NOTE(_A5), H__NOTE(_BF5), \
+  W__NOTE(_G5), H__NOTE(_C5), H__NOTE(_C5), W__NOTE(_A5), W__NOTE(_BF5), WD_NOTE(_G5), H__NOTE(_C5), W__NOTE(_BF5), \
+  W__NOTE(_A5), W__NOTE(_G5), W__NOTE(_F5), BD_NOTE(_E5), W__NOTE(_A4), H__NOTE(_E5), H__NOTE(_F5), B__NOTE(_D5), \
+  W__NOTE(_F5), H__NOTE(_F5), H__NOTE(_E5), B__NOTE(_A4), W__NOTE(_A4), H__NOTE(_E5), H__NOTE(_F5), B__NOTE(_D5), \
+  W__NOTE(_F5), BD_NOTE(_E5), W__NOTE(_A4), H__NOTE(_E5), H__NOTE(_F5), B__NOTE(_D5), W__NOTE(_A5), W__NOTE(_A5), \
+  W__NOTE(_G5), WD_NOTE(_D5), H__NOTE(_E5), WD_NOTE(_F5), H__NOTE(_D5), WD_NOTE(_E5), H__NOTE(_C5), BD_NOTE(_D5), \
+  W__NOTE(_A4), H__NOTE(_E5), H__NOTE(_F5), B__NOTE(_D5), W__NOTE(_A5), W__NOTE(_A5), W__NOTE(_G5), WD_NOTE(_D5), \
+  H__NOTE(_E5), WD_NOTE(_F5), H__NOTE(_D5), H__NOTE(_A5), H__NOTE(_G5), H__NOTE(_E5), H__NOTE(_F5), BD_NOTE(_D5),
+
+#define LIGHT_OF_THE_SEVEN \
+  H__NOTE(_C5), H__NOTE(_G5), H__NOTE(_EF6), H__NOTE(_G5), H__NOTE(_EF6), H__NOTE(_G5), H__NOTE(_C5), H__NOTE(_G5), H__NOTE(_F4), \
+  H__NOTE(_C5), H__NOTE(_AF5), H__NOTE(_C5), H__NOTE(_AF5), H__NOTE(_C5), H__NOTE(_F4), H__NOTE(_C5), H__NOTE(_C5), \
+  H__NOTE(_G5), H__NOTE(_EF6), H__NOTE(_G5), H__NOTE(_EF6), H__NOTE(_G5), H__NOTE(_C5), H__NOTE(_G5), BD_NOTE(_C5), \
+  H__NOTE(_F4), H__NOTE(_C5), H__NOTE(_AF5), H__NOTE(_C5), H__NOTE(_AF5), H__NOTE(_C5), H__NOTE(_F4), H__NOTE(_C5), \
+  H__NOTE(_EF4), H__NOTE(_BF4), H__NOTE(_G5), H__NOTE(_BF4), B__NOTE(_G5), H__NOTE(_G4), H__NOTE(_D5), H__NOTE(_F5), \
+  H__NOTE(_D5), B__NOTE(_F5), BD_NOTE(_C5), H__NOTE(_C7), H__NOTE(_G5), H__NOTE(_EF6), H__NOTE(_G5), H__NOTE(_C7), \
+  H__NOTE(_G5), H__NOTE(_C5), H__NOTE(_G5), H__NOTE(_C7), H__NOTE(_C5), H__NOTE(_BF6), H__NOTE(_C5), H__NOTE(_AF6), \
+  H__NOTE(_C5), H__NOTE(_G6), H__NOTE(_C5), H__NOTE(_C7), H__NOTE(_G5), H__NOTE(_EF6), H__NOTE(_G5), H__NOTE(_C7), \
+  H__NOTE(_G5), H__NOTE(_C5), H__NOTE(_G5), BD_NOTE(_C7), H__NOTE(_C7), H__NOTE(_G5), H__NOTE(_EF6), H__NOTE(_G5), \
+  H__NOTE(_C7), H__NOTE(_G5), H__NOTE(_C5), H__NOTE(_G5), H__NOTE(_C7), H__NOTE(_G5), H__NOTE(_B6), H__NOTE(_G5), \
+  H__NOTE(_A6), H__NOTE(_G5), H__NOTE(_G6), H__NOTE(_G5), H__NOTE(_C7), H__NOTE(_EF5), H__NOTE(_C6), H__NOTE(_EF5), \
+  H__NOTE(_C7), H__NOTE(_EF5), H__NOTE(_G5), H__NOTE(_EF5), BD_NOTE(_C7), B__NOTE(_C7), B__NOTE(_G6), H__NOTE(_AF6), \
+  H__NOTE(_BF6), W__NOTE(_C7), B__NOTE(_G6), B__NOTE(_C6), B__NOTE(_G5), H__NOTE(_AF5), H__NOTE(_BF5), W__NOTE(_C6), \
+  B__NOTE(_D6), B__NOTE(_F6), B__NOTE(_G5), H__NOTE(_C6), H__NOTE(_D6), W__NOTE(_F6), W__NOTE(_C6), W__NOTE(_G5), \
+  BD_NOTE(_C7),
+
+#define IMPERIAL_MARCH \
+  HD_NOTE(_A4), HD_NOTE(_A4), HD_NOTE(_A4), QD_NOTE(_F4), QD_NOTE(_C5), \
+  HD_NOTE(_A4), QD_NOTE(_F4),  QD_NOTE(_C5), WD_NOTE(_A4), \
+  HD_NOTE(_E5), HD_NOTE(_E5), HD_NOTE(_E5), QD_NOTE(_F5), QD_NOTE(_C5), \
+  HD_NOTE(_A4), QD_NOTE(_F4),  QD_NOTE(_C5), WD_NOTE(_A4)
+
+#define COIN_SOUND \
+    E__NOTE(_A5  ),      \
+    HD_NOTE(_E6  ),
+
+#define ONE_UP_SOUND \
+Q__NOTE(_E6  ),  \
+Q__NOTE(_G6  ),  \
+Q__NOTE(_E7  ),  \
+Q__NOTE(_C7  ),  \
+Q__NOTE(_D7  ),  \
+Q__NOTE(_G7  ),
+
+#define ZELDA_PUZZLE \
+    Q__NOTE(_G5),     \
+    Q__NOTE(_FS5),    \
+    Q__NOTE(_DS5),     \
+    Q__NOTE(_A4),    \
+    Q__NOTE(_GS4),     \
+    Q__NOTE(_E5),     \
+    Q__NOTE(_GS5),     \
+    HD_NOTE(_C6),
+
+#define ZELDA_TREASURE \
+    Q__NOTE(_A4 ), \
+    Q__NOTE(_AS4), \
+    Q__NOTE(_B4 ), \
+    HD_NOTE(_C5 ), \
+
+#define OVERWATCH_THEME \
+    HD_NOTE(_A4 ), \
+    Q__NOTE(_E4 ), \
+    Q__NOTE(_A4 ), \
+    HD_NOTE(_B4 ), \
+    Q__NOTE(_E4 ), \
+    Q__NOTE(_B4 ), \
+    W__NOTE(_CS5),
+
+#define MARIO_THEME \
+    Q__NOTE(_E5), \
+    H__NOTE(_E5), \
+    H__NOTE(_E5), \
+    Q__NOTE(_C5), \
+    H__NOTE(_E5), \
+    W__NOTE(_G5), \
+    Q__NOTE(_G4),
+
+#define MARIO_GAMEOVER \
+    HD_NOTE(_C5 ), \
+    HD_NOTE(_G4 ), \
+    H__NOTE(_E4 ), \
+    H__NOTE(_A4 ), \
+    H__NOTE(_B4 ), \
+    H__NOTE(_A4 ), \
+    H__NOTE(_AF4), \
+    H__NOTE(_BF4), \
+    H__NOTE(_AF4), \
+    WD_NOTE(_G4 ),
+
+#define MARIO_MUSHROOM \
+    S__NOTE(_C5 ), \
+    S__NOTE(_G4 ), \
+    S__NOTE(_C5 ), \
+    S__NOTE(_E5 ), \
+    S__NOTE(_G5 ), \
+    S__NOTE(_C6 ), \
+    S__NOTE(_G5 ), \
+    S__NOTE(_GS4), \
+    S__NOTE(_C5 ), \
+    S__NOTE(_DS5), \
+    S__NOTE(_GS5), \
+    S__NOTE(_DS5), \
+    S__NOTE(_GS5), \
+    S__NOTE(_C6 ), \
+    S__NOTE(_DS6), \
+    S__NOTE(_GS6), \
+    S__NOTE(_DS6), \
+    S__NOTE(_AS4), \
+    S__NOTE(_D5 ), \
+    S__NOTE(_F5 ), \
+    S__NOTE(_AS5), \
+    S__NOTE(_D6 ), \
+    S__NOTE(_F6 ), \
+    S__NOTE(_AS6), \
+    S__NOTE(_F6 )
+
+#define E1M1_DOOM  \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E4 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_D4 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_C4 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_BF3), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_B3 ), \
+    Q__NOTE(_C4 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E4 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_D4 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_C4 ), \
+    Q__NOTE(_E3 ), \
+    Q__NOTE(_E3 ), \
+    H__NOTE(_BF3),
+
+#define DISNEY_SONG \
+    H__NOTE(_G3 ),  \
+    H__NOTE(_G4 ),  \
+    H__NOTE(_F4 ),  \
+    H__NOTE(_E4 ),  \
+    H__NOTE(_CS4),  \
+    H__NOTE(_D4 ),  \
+    W__NOTE(_A4 ),  \
+    H__NOTE(_B3 ),  \
+    H__NOTE(_B4 ),  \
+    H__NOTE(_A4 ),  \
+    H__NOTE(_G4 ),  \
+    H__NOTE(_FS4),  \
+    H__NOTE(_G4 ),  \
+    W__NOTE(_C5 ),  \
+    H__NOTE(_D5 ),  \
+    H__NOTE(_C5 ),  \
+    H__NOTE(_B4 ),  \
+    H__NOTE(_A4 ),  \
+    H__NOTE(_G4 ),  \
+    H__NOTE(_F4 ),  \
+    H__NOTE(_E4 ),  \
+    H__NOTE(_D4 ),  \
+    W__NOTE(_A4 ),  \
+    W__NOTE(_B3 ),  \
+    W__NOTE(_C4 ),
+
+#define OLD_SPICE  \
+    Q__NOTE(_A4 ), \
+    Q__NOTE(_A4 ), \
+    H__NOTE(_B4 ), \
+    H__NOTE(_D5 ), \
+    H__NOTE(_CS5), \
+    Q__NOTE(_E5 ), \
+    H__NOTE(_FS5), \
+    H__NOTE(_D5 ), \
+
+#define TO_BOLDLY_GO \
+  W__NOTE(_BF3 ), \
+  Q__NOTE(_EF4 ), \
+  WD_NOTE(_AF4 ), \
+  W__NOTE(_REST), \
+  H__NOTE(_G4  ), \
+  Q__NOTE(_EF4 ), \
+  H__NOTE(_C4  ), \
+  W__NOTE(_REST), \
+  QD_NOTE(_F4  ), \
+  M__NOTE(_BF4, 128),
+
+#define LP_NUMB	\
+	H__NOTE(_CS5), H__NOTE(_E5), H__NOTE(_CS5), WD_NOTE(_FS5), \
+	WD_NOTE(_A5), WD_NOTE(_GS5),   WD_NOTE(_REST),  H__NOTE(_CS5), H__NOTE(_E5), \
+	H__NOTE(_CS5), WD_NOTE(_A5), WD_NOTE(_GS5), WD_NOTE(_E5),
