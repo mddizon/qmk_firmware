@@ -41,11 +41,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { B3, B2, B6 }
-#define MATRIX_COL_PINS { E6, B4, B5 }
+#define MATRIX_ROW_PINS { E6, B4, B5 }
+#define MATRIX_COL_PINS { B3, B2, B6 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
 #define DIODE_DIRECTION COL2ROW
 
+#undef B5_AUDIO
+#undef B6_AUDIO
+
+#define C6_AUDIO
 #define STARTUP_SONG SONG(ZELDA_PUZZLE)
