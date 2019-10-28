@@ -1,6 +1,5 @@
 MOUSEKEY_ENABLE = no
 RGB_MATRIX_ENABLE = WS2812
-TAP_DANCE_ENABLE=yes
 
 # If you want to change the display of OLED, you need to change here
 SRC +=  ./keymaps/filoxo/glcdfont.c \
