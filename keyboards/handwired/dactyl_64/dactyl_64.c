@@ -50,6 +50,7 @@ void led_set_kb(uint8_t usb_led) {
 
 */
 
+/*
 led_config_t g_led_config = { \
     { \
         {   0,   1,   2,   3,   4,   5 }, \
@@ -87,3 +88,4 @@ led_config_t g_led_config = { \
         4, 4, 4, 4, 4, 4, 4, 4, \
         4, 4, 4, 4, 4, 4, 4, 4 \
 } };
+*/

@@ -55,11 +55,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN D2
 
 #define RGBLIGHT_SPLIT
-#define RGBLED_SPLIT { 32, 32 }
-
-#define DRIVER_LED_TOTAL 64
 #define RGBLIGHT_LIMIT_VAL 100
-#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 100
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
-#define DEBOUNCE 5
+// RGB-backlight specific configs
+#define RGBLED_NUM 64
+#define RGBLIGHT_ANIMATIONS
+
+// RGB-matrix specific configs (WIP)
+/*
+#define RGBLED_SPLIT { 32, 32 }
+#define DRIVER_LED_TOTAL 64
+#define RGB_MATRIX_MAXIMUM_BRIGHTNESS 100
+*/
