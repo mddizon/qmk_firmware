@@ -18,26 +18,36 @@
 enum layers {
     _QWERTY,
     _LOWER,
-    _RAISE
+    _RAISE,
+    _NUMPAD
 };
 
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
+#define NUMPAD MO(_NUMPAD)
+#define LCT_BRC LCTL_T(KC_LBRC)
+#define RCT_BRC RCTL_T(KC_RBRC)
+#define LAT_CBC LALT_T(KC_LCBR)
+#define RAT_CBC RALT_T(KC_RCBR)
+#define NXT_TAB RCTL(KC_TAB)
+#define PRV_TAB RCTL(RSFT(KC_TAB))
+#define CTRL_P  RCTL(KC_P)
+#define CTRL_F  RCTL(KC_F)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT(
-    KC_GRV , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  ,                         KC_6  , KC_7  , KC_8  , KC_9  , KC_0  ,KC_DEL ,
-    KC_TAB , KC_Q  , KC_W  , KC_E  , KC_R  , KC_T  ,                         KC_Y  , KC_U  , KC_I  , KC_O  , KC_P  ,KC_BSLS,
-    KC_ESC , KC_A  , KC_S  , KC_D  , KC_F  , KC_G  ,                         KC_H  , KC_J  , KC_K  , KC_L  ,KC_SCLN,KC_QUOT,
-    KC_LSFT, KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,                         KC_N  , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,KC_RSFT,
-                    KC_LCTL,KC_LALT,KC_LGUI,KC_BSPC,                         KC_SPC, KC_ENT,KC_RALT,KC_RCTL,
-                    KC_LBRC,KC_RBRC,LOWER,   KC_SPC,                         KC_NO , RAISE ,KC_PLUS, KC_EQL
+    KC_GRV , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  ,                         KC_6   , KC_7  , KC_8  , KC_9  , KC_0  ,KC_DEL ,
+    KC_TAB , KC_Q  , KC_W  , KC_E  , KC_R  , KC_T  ,                         KC_Y   , KC_U  , KC_I  , KC_O  , KC_P  ,KC_BSLS,
+    KC_ESC , KC_A  , KC_S  , KC_D  , KC_F  , KC_G  ,                         KC_H   , KC_J  , KC_K  , KC_L  ,KC_SCLN,KC_QUOT,
+    KC_LSPO, KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,                         KC_N   , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,KC_RSPC,
+                    LCT_BRC,LAT_CBC,KC_LGUI,KC_SPC ,                         KC_SPC , KC_ENT,RAT_CBC,RCT_BRC,
+                    KC_EQL ,NUMPAD ,LOWER  ,KC_BSPC,                         KC_BSPC,RAISE  ,KC_EQL  ,KC_MINS
   ),
 
   [_LOWER] = LAYOUT(
     KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 , KC_F6  ,                        KC_F7  , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,KC_F12 ,
-    _______,_______,_______,_______,_______,_______,                        _______,_______,_______,_______,_______,_______,
-    _______,_______,_______,_______,_______,_______,                        _______,_______,_______,_______,_______,_______,
+    _______,_______,_______,_______,_______,_______,                        PRV_TAB,NXT_TAB,CTRL_P ,CTRL_F ,_______,_______,
+    _______,_______,_______,_______,_______,_______,                        KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,_______,_______,
     _______,_______,_______,_______,_______,_______,                        _______,_______,_______,_______,_______,_______,
                     _______,_______,_______,_______,                        _______,_______,_______,_______,
                     _______,_______,_______,_______,                        _______,_______,_______,_______
@@ -45,10 +55,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT(
     KC_TILD,KC_EXLM, KC_AT ,KC_HASH,KC_DLR ,KC_PERC,                        KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_DEL,
-    _______,_______,_______,_______,_______,KC_LBRC,                        KC_RBRC,_______,_______,_______,_______,_______,
-    RGB_MOD,RGB_VAI,RGB_HUI,RGB_SAI,_______,_______,                        _______,_______,_______,_______,_______,_______,
-    RGB_TOG,RGB_VAD,RGB_HUD,RGB_SAD,_______,_______,                        _______,_______,_______,_______,_______,_______,
+    _______,_______,_______,_______,KC_LBRC,KC_RBRC,                        _______,_______,_______,_______,_______,_______,
+    RGB_MOD,_______,_______,_______,_______,_______,                        _______,_______,_______,_______,_______,_______,
+    RGB_TOG,_______,_______,_______,_______,_______,                        _______,_______,_______,_______,_______,_______,
                     _______,_______,_______,_______,                        _______,_______,_______,_______,
+                    _______,_______,_______,_______,                        _______,_______,_______,_______
+  ),
+
+  [_NUMPAD] = LAYOUT(
+    KC_TILD,KC_EXLM, KC_AT ,KC_HASH,KC_DLR ,KC_PERC,                        KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_DEL,
+    _______,_______,_______,_______,_______,_______,                        _______,KC_7   ,KC_8   ,KC_9   ,_______,_______,
+    _______,_______,_______,_______,_______,_______,                        _______,KC_4   ,KC_5   ,KC_6   ,_______,_______,
+    _______,_______,_______,_______,_______,_______,                        _______,KC_1   ,KC_2   ,KC_3   ,_______,_______,
+                    _______,_______,_______,_______,                        _______,_______,KC_0   ,_______,
                     _______,_______,_______,_______,                        _______,_______,_______,_______
   )
 };
