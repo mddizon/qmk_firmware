@@ -25,23 +25,25 @@ enum layers {
 #define LOWER MO(_LOWER)
 #define RAISE MO(_RAISE)
 #define NUMPAD MO(_NUMPAD)
-#define LCT_BRC LCTL_T(KC_LBRC)
+#define LCT_BRC LCTL_T(KC_MINS)
+#define LAT_CBC LALT_T(KC_EQL)
 #define RCT_BRC RCTL_T(KC_RBRC)
-#define LAT_CBC LALT_T(KC_LCBR)
-#define RAT_CBC RALT_T(KC_RCBR)
+#define RAT_CBC RALT_T(KC_LBRC)
 #define NXT_TAB RCTL(KC_TAB)
 #define PRV_TAB RCTL(RSFT(KC_TAB))
 #define CTRL_P  RCTL(KC_P)
 #define CTRL_F  RCTL(KC_F)
+#define EMACS_C  RCTL_T(KC_DEL)
+#define EMACS_M  LALT_T(KC_BSPC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT(
-    KC_GRV , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  ,                         KC_6   , KC_7  , KC_8  , KC_9  , KC_0  ,KC_DEL ,
+    KC_GRV , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  ,                         KC_6   , KC_7  , KC_8  , KC_9  , KC_0  ,KC_BSPC,
     KC_TAB , KC_Q  , KC_W  , KC_E  , KC_R  , KC_T  ,                         KC_Y   , KC_U  , KC_I  , KC_O  , KC_P  ,KC_BSLS,
     KC_ESC , KC_A  , KC_S  , KC_D  , KC_F  , KC_G  ,                         KC_H   , KC_J  , KC_K  , KC_L  ,KC_SCLN,KC_QUOT,
     KC_LSPO, KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,                         KC_N   , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,KC_RSPC,
                     LCT_BRC,LAT_CBC,KC_LGUI,KC_SPC ,                         KC_SPC , KC_ENT,RAT_CBC,RCT_BRC,
-                    KC_EQL ,NUMPAD ,LOWER  ,KC_BSPC,                         KC_BSPC,RAISE  ,KC_EQL  ,KC_MINS
+                    KC_EQL ,NUMPAD ,LOWER  ,EMACS_M,                         EMACS_C,RAISE  ,KC_EQL  ,KC_MINS
   ),
 
   [_LOWER] = LAYOUT(
